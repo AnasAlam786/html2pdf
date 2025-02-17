@@ -1,10 +1,7 @@
 import express from "express"
 import puppeteer from "puppeteer"
 import bodyParser from "body-parser"
-import dotenv from "dotenv"
 
-// Load environment variables
-dotenv.config()
 
 const app = express()
 const port = 3000
@@ -18,6 +15,8 @@ app.use(bodyParser.json({ limit: "50mb" }))
 // Middleware to check API key
 const authenticateApiKey = (req, res, next) => {
   const apiKey = req.headers["x-api-key"]
+  console.log(apiKey)
+  console.log(API_KEY)
 
   if (!apiKey || apiKey !== API_KEY) {
     return res.status(401).json({ error: "Unauthorized: Invalid API key" })
