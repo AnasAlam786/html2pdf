@@ -1,11 +1,11 @@
 {
-  "name": "html2pdf",
+  "name": "html2pdf-express",
   "version": "1.0.0",
   "scripts": {
-    "start": "node api/generate-pdf.js",
-    "build": "echo 'Building...'"
+    "start": "node api/server.js"
   },
   "dependencies": {
+    "express": "^4.18.2",
     "@sparticuz/chromium": "^112.0.0",
     "puppeteer-core": "^21.0.0"
   },
