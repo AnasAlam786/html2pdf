@@ -1,19 +1,8 @@
 {
-  "dependencies": {
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "puppeteer": "^24.2.1"
-  },
-  "name": "htmltopdf",
+  "name": "pdf-api",
   "version": "1.0.0",
-  "main": "app.js",
-  "type": "module",
-  "devDependencies": {},
-  "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "@sparticuz/chromium": "^112.0.0",
+    "puppeteer-core": "^21.0.0"
+  }
 }
