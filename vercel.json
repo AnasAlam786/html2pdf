@@ -1,10 +1,14 @@
 {
-  "builds": [{
-    "src": "api/generate-pdf.js",
-    "use": "@vercel/node"
-  }],
-  "routes": [{
-    "src": "/(.*)",
-    "dest": "/api/generate-pdf"
-  }]
+  "builds": [
+    {
+      "src": "api/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/server.js"
+    }
+  ]
 }
