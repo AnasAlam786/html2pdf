@@ -1,8 +1,15 @@
 {
-  "name": "pdf-api",
+  "name": "html2pdf",
   "version": "1.0.0",
+  "scripts": {
+    "start": "node api/generate-pdf.js",
+    "build": "echo 'Building...'"
+  },
   "dependencies": {
     "@sparticuz/chromium": "^112.0.0",
     "puppeteer-core": "^21.0.0"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
